@@ -1,0 +1,24 @@
+// Sum of digits by using recursive function
+// Sample Output-Enter The Number=435
+// The sum of digits is=12
+
+#include<iostream>
+using namespace std;
+int sum(int n)
+{
+    if(n==0)
+    return 0;
+    else
+    return(n%10+sum(n/10));
+
+}
+int main()
+{
+    int num,result;
+    cout<<"Enter The Number"<<endl;
+    cin>>num;
+    result=sum(num);
+    cout<<"The sum of digits is="<<result<<endl;
+    return 0;
+
+}
